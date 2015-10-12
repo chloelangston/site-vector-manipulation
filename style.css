@@ -1,0 +1,155 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+  /*position: relative;*/
+  margin: 3%;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid black;*/
+}
+
+div .section{
+  position: relative;
+  height: 20%;
+  display: inline-block;
+  /*border: 1px solid black;*/
+  float: left;
+}
+
+div .left-container{
+  width: 40%;
+}
+
+div .right-container{
+  width: 20%
+}
+
+
+/*div .left-container{
+  width: 60%;
+  float: left;
+}
+
+div .right-container{
+  width: 30%;
+  float: left;
+}*/
+
+.list-line{
+  display: inline-block;
+}
+
+.list-element{
+  position: relative;
+  display: inline;
+  width: 80%;
+}
+/*
+.svg-capabilities{
+  position: relative;
+  width: 100%;
+  height: 20px;
+  display: inline;
+  padding: 5px;
+  padding-left: 15px;
+}*/
+
+/*.first{
+  visibility: hidden;
+}
+
+.first:hover{
+  visibility: visible;
+}*/
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  opacity: 0.5;
+  display: block! important;
+  padding: 10px 10px 10px 0px;
+}
+
+.list-text{
+  position: relative;
+  display: inline;
+}
+
+.svg-capabilities{
+  margin-left: -100px;
+  padding: 10px;
+}
+
+/*#list-1:hover ~ #list-2{
+  background: green;
+}*/
+
+h2{
+  padding: 10px;
+}
+
+.right-list{
+  -webkit-transform-origin: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.right-list-anim{
+  background: -webkit-linear-gradient(left, #1E90FF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.first{
+  opacity: 0;
+}
+.second{
+  opacity: 0;
+}
+
+.first:hover {
+  opacity: 1;
+}
+
+
+.middle-container{
+  width: 30%;
+  margin-top: 100px;
+}
+
+.svg-bars{
+  position: absolute;
+}
+
+svg {
+  polyline{
+    animation: draw 10s infinite linear;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.two{
+  /*margin-top: 40px;*/
+}
+
+h2{
+  font-weight: lighter! important;
+  opacity: 0.8
+}
+
+.bars-class{
+  opacity: 0;
+}
