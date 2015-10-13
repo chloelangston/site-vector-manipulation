@@ -101,9 +101,11 @@ h2{
 }
 
 .right-list-anim{
-  background: -webkit-linear-gradient(left, #1E90FF, #FFFFFF);
+  /*background: -webkit-linear-gradient(left, #1E90FF, #FFFFFF);*/
+  /*opacity: 0.8;*/
+  /*background: #000000;*/
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*-webkit-text-fill-color: transparent;*/
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -151,5 +153,5 @@ h2{
 }
 
 .bars-class{
-  opacity: 0;
+  /*opacity: 0;*/
 }

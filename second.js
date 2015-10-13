@@ -82,54 +82,36 @@ $(function(){
   })
 
   function checkWidth(){
-    console.log($('.left-container').width())
-    console.log($('.middle-container').width() + $('.left-container').width() + 50);
     var containerWidth = $('.middle-container').width();
     var startX = containerWidth - (containerWidth/6);
     var midX = containerWidth - (containerWidth/2);
     var endX = containerWidth + 50;
     var firstPoint = ($('.left-container').width() - $('span').width());
-    console.log($('span').width());
-    console.log(firstPoint);
 
-    var secondY = 40;
-    var thirdY = 80;
-    var fourthY = 120;
-    var fifthY = 160;
-    var sixthY = 200;
-    var seventhY = 240;
-    var eighthY = 280;
+    var secondXPoint = containerWidth-startX;
+    var midXPoint = containerWidth-midX;
+    var firstYPoint;
 
 
-
-    var firstBar = document.querySelector('.first');
-    firstBar.setAttribute("points", "0,0 " + (containerWidth-startX) + ",0 " + (containerWidth-midX) + ",40 " + (endX) + ",40, " + (containerWidth-midX) + ",40 " + (containerWidth-startX) + ",0 " + (containerWidth-midX) + ",80 " + (endX) + ",80, " + (containerWidth-midX) + ",80 " + (containerWidth-startX) + ",0 " + (containerWidth-midX) + ",280 " + (endX) + ",280, " + (containerWidth-midX) + ",280 " + (containerWidth-startX) + ",0 " + (endX) + ",0");
-
-    var secondBar = document.querySelector('.second');
-    secondBar.setAttribute("points", "0," + secondY + " " + (containerWidth-startX) + "," + secondY + " " + (containerWidth-midX) + "," + (secondY+40) + " " + (endX) + "," + (secondY+40) + ", " + (containerWidth-midX) + "," + (secondY+40) + " " + (containerWidth-startX) + "," + secondY + " " + (containerWidth-midX) + "," + (secondY-40) + " " + (endX) + "," + (secondY-40) + ", " + (containerWidth-midX) + "," + (secondY-40) + " " + (containerWidth-startX) + "," + secondY + " " + (containerWidth-midX) + "," + (secondY+120) + " " + (endX) + "," + (secondY+120) + ", " + (containerWidth-midX) + "," + (secondY+120) + " " + (containerWidth-startX) + "," + secondY + " " + (containerWidth-midX) + "," + (secondY+160) + " " + (endX) + "," + (secondY+160) + ", " + (containerWidth-midX) + "," + (secondY+160) + " " + (containerWidth-startX) + "," + secondY + " " + (endX) + "," + secondY);
-
-    var thirdBar = document.querySelector('.third');
-    thirdBar.setAttribute("points", "0," + thirdY + " " + (containerWidth-startX) + "," + thirdY + " " + (containerWidth-midX) + "," + (thirdY+160) + " " + (endX) + "," + (thirdY+160) + ", " + (containerWidth-midX) + "," + (thirdY+160) + " " + (containerWidth-startX) + "," + thirdY + " " + (containerWidth-midX) + "," + (thirdY+200) + " " + (endX) + "," + (thirdY+200) + ", " + (containerWidth-midX) + "," + (thirdY+200));
-
-    var fourthBar = document.querySelector('.fourth');
-    fourthBar.setAttribute("points", "0," + fourthY + " " + (containerWidth-startX) + "," + fourthY + " " + (containerWidth-midX) + "," + (fourthY+40) + " " + (endX) + "," + (fourthY+40) + ", " + (containerWidth-midX) + "," + (fourthY+40) + " " + (containerWidth-startX) + "," + fourthY);
-
-    var fifthBar = document.querySelector('.fifth');
-    fifthBar.setAttribute("points", "0," + fifthY + " " + (containerWidth-startX) + "," + fifthY + " " + (containerWidth-midX) + "," + (fifthY-80) + " " + (endX) + "," + (fifthY-80) + ", " + (containerWidth-midX) + "," + (fifthY-80) + " " + (containerWidth-startX) + "," + fifthY + " " + (endX) + "," + fifthY);
-
-    var sixthBar = document.querySelector('.sixth');
-    sixthBar.setAttribute("points", "0," + sixthY + " " + (containerWidth-startX) + "," + sixthY + " " + (containerWidth-midX) + "," + (sixthY+40) + " " + (endX) + "," + (sixthY+40) + ", " + (containerWidth-midX) + "," + (sixthY+40) + " " + (containerWidth-startX) + "," + sixthY + " " + (containerWidth-midX) + "," + (sixthY-40) + " " + (endX) + "," + (sixthY-40) + ", " + (containerWidth-midX) + "," + (sixthY-40) + " " + (containerWidth-startX) + "," + sixthY + " " + (containerWidth-midX) + "," + (sixthY-120) + " " + (endX) + "," + (sixthY-120) + ", " + (containerWidth-midX) + "," + (sixthY-120) + " " + (containerWidth-startX) + "," + sixthY + " " + (containerWidth-midX) + "," + (sixthY+80) + " " + (endX) + "," + (sixthY+80) + ", " + (containerWidth-midX) + "," + (sixthY+80) + " " + (containerWidth-startX) + "," + sixthY + " " + (containerWidth-midX) + "," + (sixthY-160) + " " + (endX) + "," + (sixthY-160) + ", " + (containerWidth-midX) + "," + (sixthY-160) + " " + (containerWidth-startX) + "," + sixthY + " " + (containerWidth-midX) + "," + (sixthY-200) + " " + (endX) + "," + (sixthY-200) + ", " + (containerWidth-midX) + "," + (sixthY-200) + " " + (containerWidth-startX) + "," + sixthY + " " + (containerWidth-midX) + "," + (sixthY-80) + " " + (endX) + "," + (sixthY-80) + ", " + (containerWidth-midX) + "," + (sixthY-80) + " " + (containerWidth-startX) + "," + sixthY + " " + (endX) + "," + sixthY);
-
-    var seventhBar = document.querySelector('.seventh');
-    seventhBar.setAttribute("points", "0," + seventhY + " " + (containerWidth-startX) + "," + seventhY + " " + (containerWidth-midX) + "," + (seventhY-240) + " " + (endX) + "," + (seventhY-240) + ", " + (containerWidth-midX) + "," + (seventhY-240) + " " + (containerWidth-startX) + "," + seventhY + " " + (containerWidth-midX) + "," + (seventhY-140) + " " + (endX) + "," + (seventhY-140));
-
-    var eighthBar = document.querySelector('.eighth');
-    eighthBar.setAttribute("points", "0," + eighthY + " " + (containerWidth-startX) + "," + eighthY + " " + (containerWidth-midX) + "," + (eighthY-40) + " " + (endX) + "," + (eighthY-40) + ", " + (containerWidth-midX) + "," + (eighthY-40) + " " + (containerWidth-startX) + "," + eighthY);
+    $('.list-element').each(function(i, val){
+      $(this).hover(drawBars).hover(drawBars);
+      function drawBars(){
+        var allPoints = [];
+        var rightIndexArray = $(this).data("connects-to").toString().split(",").map(function(num){return parseInt(num)});
+        currentElement = i;
+        $.each(rightIndexArray, function(i, val){
+          firstYPoint = currentElement*40;
+          firstRightElementY = rightIndexArray[i]*40;
+          points = [[secondXPoint, firstYPoint], [midXPoint, firstRightElementY], [endX, firstRightElementY], [midXPoint, firstRightElementY], [secondXPoint, firstYPoint]];
+          allPoints.push(points);
+          document.querySelector('.svg-bar').setAttribute("points", [0, firstYPoint].join(",") + " " +  allPoints.join(" "));
+        })
+      }
+    })
   }
 
-  //execute on load
-  checkWidth();
   //on resize
   $(window).resize(checkWidth);
-
+  //execute on load
+  checkWidth();
 })
